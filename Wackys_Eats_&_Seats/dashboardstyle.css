@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Poppins:wght@100;200;300;400&display=swap');
+
+:root {
+    --green: #26ae60;
+    --black: #26180f;
+    --light-color: #666666;
+    --box-shadow: 0.5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+    text-transform: none;
+    transition: all .2s linear;
+}
+
+.sub-heading{
+    text-align: center;
+    color: var(--green);
+    font-size: 2rem;
+    padding-top: 1rem;
+    margin-top: 3%;
+}
+
+body{
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(255, 241, 176, 0.9), rgba(204, 226, 172, 0.9)), url(images/Buffet\ Dashboard.jpg);
+}
+
+.container{
+    padding: 20px;
+    box-shadow: 3px 3px 20px var(10, 72, 232, 0.256);
+    background-color: rgb(253, 255, 237);
+    border-radius: 10px;
+    margin: 60px;
+    margin-top: 30px;
+    overflow-y: auto;
+    table-layout: fixed; /* Use fixed table layout */
+    box-shadow: var(--box-shadow);
+}
+
+.container header .filterEntries {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filter label {
+    color: #000000;
+    margin-left: 5px;
+    padding: 5px;
+}
+
+.filter input {
+    padding: 7px 10px;
+    border: 1px solid var(--black);
+    color: var(--light-color);
+    background: #fff;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+    cursor: pointer;
+    width: 500px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.filter input:focus {
+    border-color: var(--light-color);
+}
+
+.container table {
+    border-collapse: collapse;
+    text-align: left; 
+}
+
+.container table .heading {
+    background: transparent;
+    color: #000000;
+    font-size: 15px;
+    margin-top: 50px;
+}
+
+.container table tr th, 
+.container table tr td {
+    text-align: left;
+    padding: 5px 24px;
+    color: var(--black);
+}
+
+.container table tr td:nth-child(5), 
+.container table tr td:nth-child(7) {
+    text-align: center;
+}
+
+.container table tr td {
+    border-bottom: 1px solid var(--black);
+}
+
+.container table tr:first-child td{
+    border-top: 1px solid var(--black);
+}
+
+.container table tbody tr:nth-child(odd){
+    background: #e6eccb;
+}
+
+.container table tr td{
+    font-size: 15px;
+}
+
+.container table td button{
+    margin: 0 3px;
+    padding: 5px;
+    width: 35px;
+    background-color: var(--green);
+    border: 1px solid;
+    border-radius: 5px;
+    color: #f5f5f7;
+    font-size: 16px;
+    cursor: pointer;
+    pointer-events: auto;
+    outline: none;
+    border: 1px solid;
+}
+
+/*----- reception -----*/
+.reception-container{
+    padding: 20px;
+    box-shadow: 3px 3px 20px var(10, 72, 232, 0.256);
+    background-color: rgb(253, 255, 237);
+    border-radius: 10px;
+    margin: 20px;
+    margin-top: 30px;
+    overflow-y: auto;
+    table-layout: fixed; /* Use fixed table layout */
+    box-shadow: var(--box-shadow);
+}
+
+.reception-container header .reception-filterEntries {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.reception-filter label {
+    color: #000000;
+    margin-left: 5px;
+    padding: 5px;
+}
+
+.reception-filter input {
+    padding: 7px 10px;
+    border: 1px solid var(--black);
+    color: var(--light-color);
+    background: #fff;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+    cursor: pointer;
+    width: 500px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.reception-filter input:focus {
+    border-color: var(--light-color);
+}
+
+.reception-container table {
+    border-collapse: collapse;
+    text-align: left; 
+}
+
+.reception-container table .reception-heading {
+    background: transparent;
+    color: #000000;
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+.reception-container table tr th, 
+.reception-container table tr td {
+    text-align: left;
+    padding: 4px 14px;
+    color: var(--black);
+}
+
+.reception-container table tr td {
+    border-bottom: 1px solid var(--black);
+}
+
+.reception-container table tr:first-child td{
+    border-top: 1px solid var(--black);
+}
+
+.reception-container table tbody tr:nth-child(odd){
+    background: #e6eccb;
+}
+
+.reception-container table tr td{
+    font-size: 14px;
+}
+
+.reception-container table td button{
+    margin: 0 3px;
+    padding: 5px;
+    width: 35px;
+    background-color: var(--green);
+    border: 1px solid;
+    border-radius: 5px;
+    color: #f5f5f7;
+    font-size: 16px;
+    cursor: pointer;
+    pointer-events: auto;
+    outline: none;
+    border: 1px solid;
+}
+
+
+/* Add this code to your dashboardstyle.css file */
+.crudbutton {
+    display: flex;
+    gap: 10px;   
+}
+
+.crudbutton button {
+    padding: 3px 3px 3px 3px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    width: 68px;
+    background-color: #26ae60;
+    color: #fff;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.crudbutton button:hover {
+    background-color: #3f526e;
+    color: #fff;
+}
+
+.crudbutton button[type="submit"] {
+    margin-left: auto;
+}
+
+/* Adjust the margin for the pagination */
+.reception-container footer,
+.container footer {
+    margin-top: 20px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reception-container footer span,
+.container footer span {
+    color: #000000;
+}
+
+footer .pagination button {
+    width: 40px;
+    padding: 5px 0;
+    color: #000000;
+    background: transparent;
+    font-size: 14px;
+    cursor: pointer;
+    pointer-events: auto;
+    outline: none;
+    border: 1px solid var(--black);
+    border-left: none;
+    margin: 0;
+}
+
+/* Adjust the margin for the first and last pagination buttons */
+footer .pagination button:first-child {
+    width: 80px;
+    border-left: 1px solid var(--black);
+    pointer-events: none;
+}
+
+footer .pagination button:last-child {
+    width: 80px;
+    border-right: 1px solid var(--black);
+}
+
+/* Add hover and active color for pagination buttons */
+footer .pagination button:hover,
+footer .pagination button.active {
+    background: #26ae60;
+}
+table tr .empty{
+    padding: 6px; 
+}
+
+.icon-container {
+    position: fixed;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: transparent; 
+    padding: 10px;
+    
+}
+
+
+
+
+
