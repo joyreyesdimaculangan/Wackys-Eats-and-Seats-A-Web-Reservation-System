@@ -1,4 +1,4 @@
-# Wacky-s-Eats-and-Seats-A-Web-Reservation-System
+# Wackys-Eats-and-Seats-A-Web-Reservation-System
 
 A web reservation system for Wacky’s Food House: <br>
 • To provide convenience to customers because of its impressive User Interface (UI) and User Experience (UX) <br>
